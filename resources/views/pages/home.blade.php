@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-3 col-md-2 stats-detail">
                     <h2>72</h2>
-                    <p>Partnes</p>
+                    <p>Partners</p>
                 </div>
                 <div class="col-3 col-md-2 stats-detail">
                     <h2>4K</h2>
