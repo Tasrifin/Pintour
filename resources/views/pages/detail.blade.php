@@ -43,7 +43,7 @@
                             </div>
                             @endif
                             <h2>Tentang WIsata</h2>
-                            <p>
+                            <p align="justify">
                                 {!! $item->about !!}
                             </p>
                             <div class="features row">
@@ -106,7 +106,7 @@
                                 <tr>
                                     <th width="50%">Harga</th>
                                     <td width="50%">
-                                        Rp. {{$item->price}},00/Orang
+                                        Rp. {{number_format($item->price)}},00/Orang
                                     </td>
                                 </tr>
                             </table>
