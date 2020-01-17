@@ -19,13 +19,12 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Services</a>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Link</a>
-                                <a href="#" class="dropdown-item">Link</a>
-                                <a href="#" class="dropdown-item">Link</a>
+                                <a href="#partners" class="dropdown-item">Partner</a>
+                               
                             </div>
                         </li>
                         <li class="nav-item mx-md-2">
-                            <a href="#" class="nav-link">Testimonial</a>
+                            <a href="#testimonials" class="nav-link">Testimonial</a>
                         </li>
                     </ul>
                     @guest

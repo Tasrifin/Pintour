@@ -71,7 +71,7 @@
         </section>
 
         <!-- network -->
-        <section class="section-networks">
+        <section class="section-networks" id="partners">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
