@@ -14,7 +14,7 @@
                             <a href="#" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item mx-md-2">
-                            <a href="#" class="nav-link">Paket Travel</a>
+                            <a href="#popular" class="nav-link">Paket Travel</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Services</a>
