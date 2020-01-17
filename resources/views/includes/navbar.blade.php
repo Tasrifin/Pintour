@@ -17,7 +17,7 @@
                             <a href="#popular" class="nav-link">Paket Travel</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Services</a>
+                            <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Layanan</a>
                             <div class="dropdown-menu">
                                 <a href="#partners" class="dropdown-item">Partner</a>
                                
