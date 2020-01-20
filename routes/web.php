@@ -14,25 +14,27 @@
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/detail/{slug}', 'DetailController@index')->name('detail');
 
+Auth::routes(['verify' => true]);
+
 Route::post('/checkout/{id}', 'CheckoutController@process')
     ->name('checkout_process')
-    ->middleware(['auth'], ['verified']);
+    ->middleware(['verified'], ['auth']);
 
 Route::get('/checkout/{id}', 'CheckoutController@index')
     ->name('checkout')
-    ->middleware(['auth'], ['verified']);
+    ->middleware(['verified'], ['auth']);
 
 Route::post('/checkout/create/{detail_id}', 'CheckoutController@create')
     ->name('checkout-create')
-    ->middleware(['auth'], ['verified']);
+    ->middleware(['verified'], ['auth']);
 
 Route::get('/checkout/remove/{detail_id}', 'CheckoutController@remove')
     ->name('checkout-remove')
-    ->middleware(['auth'], ['verified']);
+    ->middleware(['verified'], ['auth']);
 
 Route::get('/checkout/confirm/{id}', 'CheckoutController@success')
     ->name('checkout-success')
-    ->middleware(['auth'], ['verified']);
+    ->middleware(['verified'], ['auth']);
 
 Route::prefix('admin')
     ->namespace('Admin')
@@ -44,5 +46,3 @@ Route::prefix('admin')
         Route::resource('gallery', 'GalleryController');
         Route::resource('transaction', 'TransactionController');
     });
-
-Auth::routes(['verify' => true]);

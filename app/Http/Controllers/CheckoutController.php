@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Auth; //Checkout mengambil ID user
 
 class CheckoutController extends Controller
 {
+
     public function index(Request $request, $id)
     {
         $item = Transaction::with(['details', 'travel_package', 'user'])->findOrFail($id);
