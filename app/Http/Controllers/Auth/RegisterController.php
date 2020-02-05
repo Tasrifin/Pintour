@@ -79,6 +79,6 @@ class RegisterController extends Controller
     {
         $this->validator($request->all())->validate();
         event(new Registered($user = $this->create($request->all())));
-        return redirect($this->redirectPath())->with('status', 'Registrasi berhasil! Kami telah mengirimkan email verifikasi. Silahkan lakukan verifikasi email untuk dapat mengakses semua fitur.');
+        return redirect($this->redirectPath())->with('status', 'Registrasi berhasil! Kami telah mengirimkan email verifikasi. Silahkan lakukan verifikasi email untuk dapat mengakses semua fitur');
     }
 }

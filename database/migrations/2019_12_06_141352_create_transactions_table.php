@@ -23,13 +23,14 @@ class CreateTransactionsTable extends Migration
             $table->softDeletes();
             $table->timestamps();
 
-            $table->foreign('users_id')->references('id')
-                ->on('users')
+            $table->foreign('travel_packages_id')
+                ->references('id')
+                ->on('travel_packages')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
 
-            $table->foreign('travel_packages_id')->references('id')
-                ->on('travel_packages')
+            $table->foreign('users_id')->references('id')
+                ->on('users')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
         });
